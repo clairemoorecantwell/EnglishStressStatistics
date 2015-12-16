@@ -8,3 +8,5 @@ Bruce Hayes also has his own, somewhat cleaned-up version, available on this pag
 http://www.linguistics.ucla.edu/people/hayes/BLICK/CMUDictionaryEditedWithCELEXFrequenciesPublicVersion2.xls
 
 At the moment, you can see my annotated cmu: newCMU.txt, and use the R script corpusAnalysis.R to analyze it in R.  Also see the R script for explanations of the column names if they are opaque
+
+Check back for updates!  Soon there will also be python scripts that can get you all the way from the raw CMU to an annotated file like newCMU.txt
