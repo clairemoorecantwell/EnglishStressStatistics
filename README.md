@@ -7,4 +7,4 @@ http://www.speech.cs.cmu.edu/cgi-bin/cmudict
 Bruce Hayes also has his own, somewhat cleaned-up version, available on this page:
 http://www.linguistics.ucla.edu/people/hayes/BLICK/CMUDictionaryEditedWithCELEXFrequenciesPublicVersion2.xls
 
-Included here are a series of python scripts which can be used to transform CMU into a highly-annotated file useful for doing statistics on.
+At the moment, you can see my annotated cmu: newCMU.txt, and use the R script corpusAnalysis.R to analyze it in R.  Also see the R script for explanations of the column names if they are opaque
