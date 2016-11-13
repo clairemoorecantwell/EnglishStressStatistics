@@ -43,6 +43,11 @@ def searchCMU(factors,specifiers,check_inScope,output='output.txt',inSubtlex=1,s
 
 	for entry in cmuprosody:
 		ent=cmuprosody[entry]
+		# Check if it's a well-formed CMU entry actually:
+		if len(ent)!=5 or len(ent[0])==0 or len(ent[1])==0 or len(ent[2])==0 or len(ent[3])==0 or len(ent[4])==0:
+			print "This entry is not well-formed! Let's skip it."
+			print ent
+			continue
 		if check_inScope(ent):
 			if inSubtlex:			# If you care about the word being listed in subtlex
 				if entry in subtlex:# check whether it is, and only use it if it is.
@@ -50,7 +55,7 @@ def searchCMU(factors,specifiers,check_inScope,output='output.txt',inSubtlex=1,s
 				else:
 					useThisOne=0
 			else:
-				useThisOne=0
+				useThisOne=1
 						
 			if useThisOne:	
 				if inSubtlex==1:		
@@ -69,6 +74,7 @@ def searchCMU(factors,specifiers,check_inScope,output='output.txt',inSubtlex=1,s
 				resultlineSeed=[ent[0],''.join(ent[1]),''.join(ent[2]),'.'.join(ent[4])]
 				resultline=resultlineSeed
 				resultline.append("("+")(".join(ent[3])+")")
+				#print resultline
 			
 			
 				#######
